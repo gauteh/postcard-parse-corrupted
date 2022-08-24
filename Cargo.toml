@@ -1,0 +1,13 @@
+[package]
+name = "postcard-parse-corrupted"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+half = { version = "1.8.2", features = [ "use-intrinsics", "bytemuck", "serde" ] }
+heapless = { version = "0.7", features = [ "serde", "ufmt-impl", "defmt-impl" ] }
+serde = { version = "1", features = ["derive"], default-features = false }
+postcard = { version = "0.7" }
+anyhow = "1.0.62"
